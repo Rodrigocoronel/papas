@@ -36,7 +36,7 @@ class DefaultLayout extends Component {
             <AppSidebarNav navConfig={navigation} {...this.props} />
             <AppSidebarFooter />
             <AppSidebarMinimizer />
-          </AppSidebar>
+          </AppSidebar>{
           <main className="main">
             <AppBreadcrumb appRoutes={routes}/>
             <Container fluid>
@@ -51,7 +51,7 @@ class DefaultLayout extends Component {
                 <Redirect from="/" to="/dashboard" />
               </Switch>
             </Container>
-          </main>
+          </main>}
           <AppAside fixed hidden>
             <DefaultAside />
           </AppAside>
